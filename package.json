@@ -2,6 +2,11 @@
   "name": "webpack-part7",
   "version": "0.0.1",
   "description": "practising webpack",
-  "scripts": {},
-  "license": "MIT"
+  "scripts": {
+    "build": "webpack --mode=development"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  }
 }
