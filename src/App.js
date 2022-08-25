@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "./index.css";
+import PromisePolyfill from "promise-polyfill";
+
+if (!window.Promise) {
+  window.Promise = PromisePolyfill;
+}
 
 const useNotes = (url) => {
   const [notes, setNotes] = useState([]);
